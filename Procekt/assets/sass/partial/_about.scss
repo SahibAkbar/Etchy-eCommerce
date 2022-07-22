@@ -1,0 +1,26 @@
+.about-banner{
+    background-image: url("/assets/img/bg/p1-parallax-img1.jpg");
+    background-position: center 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    h1{
+        padding: 200px 0;
+        text-align: center;
+        color: #ffffff;
+        font-family: Arimo,sans-serif;
+        font-weight: 700;
+        text-transform: uppercase;
+        font-size: 65px;
+        line-height: 1em;
+        letter-spacing: .02em;
+        word-wrap: break-word;
+    }
+}
+.about{
+    background: none;
+}
+.about-ser{
+    background-color: #f8f8f8;
+    padding: 136px 0 132px;
+}

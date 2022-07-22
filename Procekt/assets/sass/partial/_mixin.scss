@@ -1,0 +1,94 @@
+@mixin button {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    width: auto;
+    margin: 0;
+    font-family: Arimo,sans-serif;
+    font-size: 13px;
+    line-height: 2em;
+    font-weight: 700;
+    letter-spacing: .01em;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 0;
+    box-sizing: border-box;
+    transition: .5s;
+    padding: 10px 36px;
+    &:hover{
+        .dot::before{
+            width: 20px;
+            left: 80%;
+        }
+        .dot::after{
+            width: 20px;
+            left: 20%;
+        }
+    }
+    &:hover{
+        letter-spacing: 0.25em;
+    }
+    &::before{
+        content: '';
+        position: absolute;
+        inset: 2px;
+        background: #ffec4f;
+    }
+    &::after{
+        content: '';
+        position: absolute;
+        inset: 2px;
+        background: #ffec4f;
+    }
+    .text{
+        z-index: 11;
+        position: relative;
+    }
+    .dot{
+        position: absolute;
+        inset: 0;
+        display: block;
+        &::before{
+            content: '';
+            width: 10px;
+            height: 6px;
+            top: -3.5px;
+            left: 20%;
+            position: absolute;
+            border: 2px solid #FFFFFF;
+            background: #27282c;
+            transition: 0.5s;
+        }
+        &::after{
+            content: '';
+            width: 10px;
+            height: 6px;
+            bottom: -3.5px;
+            left: 80%;
+            position: absolute;
+            border: 2px solid #FFFFFF;
+            background: #27282c;
+            transition: 0.5s;
+        }
+    }
+}
+@mixin a-line {
+    position: relative;
+    &:hover{
+          &::after{
+            transform: scaleX(1);
+        }
+      }
+      &::after{
+        content: '';
+        position: absolute;
+        transform: scaleX(0);
+        width: 100%;
+        height: 1px;
+        background-color: currentColor;
+        bottom: 0px;
+        left: 0;
+        transform-origin: left;
+        transition: transform .32s cubic-bezier(.31,.29,.05,.96),-webkit-transform .32s cubic-bezier(.31,.29,.05,.96);
+    }
+}

@@ -1,0 +1,101 @@
+@media (max-width: 575px){
+    .home-slider .slider-content h1{
+        font-size: 15px;
+    }
+    .weli .write-text img{
+        top: 67vmin;
+        width: 80%;
+    }
+    .cart-page form .table-content .table tbody tr .product-thumbnail{
+        display: none;
+    }
+    .cart-page form .table-content .table thead tr .product-thumbnail{
+        display: none;
+    }
+    .cart-page form .table-content .table tbody tr .product-name a{
+        font-size: 11px;
+    }
+    .cart-page form .table-content .table tbody tr td span{
+        font-size: 11px;
+    }
+    main .single-product .content{
+        padding-left: 0px;
+    }
+    main .single-product .product-tab-nav .nav-item a{
+        font-size: 12px;
+        padding: 15px 15px 15px;
+     }
+}
+@media (max-width: 575px) and (min-width:368px) {}
+@media (max-width: 368px){}
+@media (max-width: 767.98px) and (min-width: 575px) {}
+@media (max-width: 767.98px) {
+    main .blog-page .left-sidebar .main-blog .user-desc {
+        display: block;
+        text-align: center;
+        padding: 40px 0px 40px 0;
+    }
+    main .blog-page .left-sidebar .main-blog .user-desc .content ul{
+        justify-content: center;
+    }
+}
+@media (max-width: 991.98px) {
+    header .sticky{
+        display: none;
+    }
+    .galery-slide{
+        .owl-dots{
+            display: none;
+        }
+    }
+}
+@media (max-width: 767px){
+    .weli .content{
+        text-align: center;
+        padding-top: 76px;
+        padding-bottom: 0;
+    }
+    .weli .right{
+        text-align: center;
+        padding-bottom: 0;
+    }
+    .purchase .right-cont{
+        display: block;
+    }
+    .purchase .left-cont{
+        text-align: center;
+    }
+    .purchase .right-cont .check-text{
+        width: 100%;
+        border: none;
+    }
+}
+@media (max-width: 991.98px) and (min-width: 767px) {
+    .product .content .inner-img .inner-content .inner-2 .button-add button{
+        font-size: 11px;
+        padding: 0 24px;
+    }
+}
+
+
+@media only screen and (max-width: 680px){
+    .cart-page form .table-content .table tbody tr .actions .coupen input {
+        width: 100%;
+        margin: 0 0 20px;
+        text-align: center;
+    }    
+    .cart-page form .table-content .table tbody tr .actions .coupen{
+        width: 100%;
+        float: none;
+    }
+    .cart-page form .table-content .table tbody tr .actions .coupen .apply{
+        width: 100%;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    .cart-page form .table-content .table tbody tr .actions .update{
+        width: 100%;
+        float: none;
+        text-align: center;
+    }
+}

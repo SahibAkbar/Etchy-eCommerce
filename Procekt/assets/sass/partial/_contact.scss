@@ -1,0 +1,114 @@
+.contact-banner{
+    background-image: url("/assets/img/bg/contact.jpg ");
+    background-position: center 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    h1{
+        padding: 200px 0;
+        text-align: center;
+        color: #ffffff;
+        font-family: Arimo,sans-serif;
+        font-weight: 700;
+        text-transform: uppercase;
+        font-size: 65px;
+        line-height: 1em;
+        letter-spacing: .02em;
+        word-wrap: break-word;
+    }
+}
+.maps{
+    padding: 140px 0 0;
+    .karta{
+        iframe{
+            width: 100%;
+        }
+    }   
+}
+.contact-form{
+    padding: 126px 0 140px;
+    .left{
+        h2{
+            font-family: Arimo,sans-serif;
+            font-weight: 700;
+            text-transform: uppercase;
+            color: #000;
+            font-size: 45px;
+            line-height: 1.044em;
+            letter-spacing: .02em;
+            word-wrap: break-word;
+            span{
+                position: relative;
+                img{
+                    position: absolute;
+                    top: 0;
+                    right: -16px;
+                }
+            }
+        }
+        p{
+            margin-top: 5px;
+            color: #303030;
+            font-size: 18px;
+            line-height: 28px;
+            padding-top: 7px;
+        }
+        ul{
+            li{
+                margin: 10px 0;
+                color: #6f6f6f;
+                a{
+                    color: #6f6f6f;
+                    transition: .3s linear;
+                    &:hover{
+                        color: #000;
+                    }
+                }
+            }
+        }
+    }
+    .right{
+        form{
+            input{
+                display: inline-block;
+                width: 100%;
+                vertical-align: top;
+                margin: 0 0 12px;
+                padding: 6px 0;
+                font-family: inherit;
+                font-size: 15px;
+                line-height: 22px;
+                font-weight: inherit;
+                color: #6f6f6f;
+                background-color: transparent;
+                border-bottom: 1px solid #000;
+                border-top: none;
+                border-left: none;
+                border-right: none;
+                border-radius: 0;
+                outline: 0;
+                cursor: pointer;
+            }
+            textarea{
+                padding: 12px 20px;
+                display: inline-block;
+                width: 100%;
+                border-color: #000;
+                vertical-align: top;
+                margin: 0 0 12px;
+                font-family: inherit;
+                font-size: 15px;
+                line-height: 22px;
+                font-weight: inherit;
+                color: #6f6f6f;
+                background-color: transparent;
+                border-radius: 0;
+                outline: 0;
+                cursor: pointer;
+            }
+            button{
+                @include button;
+            }
+        }
+    }
+}

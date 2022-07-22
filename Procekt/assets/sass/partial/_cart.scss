@@ -1,0 +1,330 @@
+.cart-page{
+    padding: 75px 0px 100px 0px;
+    form{
+        .table-content{
+            .table{
+                width: 100%;
+                vertical-align: middle;
+                border: medium none;
+                border-collapse: collapse;
+                border-spacing: 0;
+                thead{
+                    tr{
+                        border-left: none;
+                        border-right: none;
+                        border-top: none;
+                        border-bottom: 1px solid #e2e2e2;
+                        th{
+                            font-family: Arimo,sans-serif;
+                            font-weight: 700;
+                            text-transform: uppercase;
+                            color: #000;
+                            font-size: 15px;
+                            line-height: 1.133em;
+                            letter-spacing: .03em;
+                            &:first-child {
+                                padding-left: 0;
+                            }
+                        }
+                    }
+                }
+                tbody{
+                    tr{
+                        border-left: none;
+                        border-right: none;
+                        border-top: none;
+                        border-bottom: 1px solid #e2e2e2;
+                        &:last-child{
+                            border-bottom: 0;
+                        }
+                        td{
+                            padding: 15px 0 15px 5px;
+                            vertical-align: middle;
+                            text-align: left;
+                            border: 0;
+                            &:first-child {
+                                padding-left: 0;
+                            }
+                            span{
+                                font-family: Arimo,sans-serif;
+                                font-size: 15px;
+                                line-height: 1.8em;
+                                font-weight: 400;
+                                color: #6f6f6f;
+                            }
+                        }
+                        .product-remove{
+                            width: 30px;
+                            button{
+                                i{
+                                    font-size: 16px;
+                                }
+                            }
+                        }
+                        .product-thumbnail{
+                            width: 72px;
+                            padding-right: 10px;
+                            a{
+                                display: block;
+                                width: 100%;
+                            }
+                        }
+                        .product-name{
+                            text-align: left;
+                            a{
+                                display: block;
+                                font-family: Arimo,sans-serif;
+                                font-weight: 700;
+                                text-transform: uppercase;
+                                font-size: 15px;
+                                line-height: 1.133em;
+                                letter-spacing: .03em;
+                                color: #000;
+                            }
+                        }
+                        .quantity-main{
+                            .quatity{
+                                width: 126px;
+                                position: relative;
+                                display: flex;
+                                align-items: center;
+                                vertical-align: middle;
+                                border: 1px solid #000;
+                                margin-right: 15px;
+                                .minus{
+                                    margin-left: 13px;
+                                    width: 26px;
+                                    height: 26px;
+                                    font-size: 17px;
+                                    border-left: 0;
+                                    cursor: pointer;
+                                }
+                                input{
+                                    position: relative;
+                                    height: 44px;
+                                    width: 46px;
+                                    margin: 0;
+                                    padding: 0;
+                                    font-family: inherit;
+                                    font-size: 13px;
+                                    font-weight: 700;
+                                    line-height: 1;
+                                    border: none;
+                                    outline: 0;
+                                    cursor: text;
+                                    border: none;
+                                    display: inline-block;
+                                    vertical-align: middle;
+                                    text-align: center;
+                                    user-select: none;
+                                    color: #000;
+                                    &:disabled{
+                                        background-color: transparent;
+                                    }
+                                }
+                                .plus{
+                                    margin-right: 13px;
+                                    font-size: 17px;
+                                    width: 26px;
+                                    height: 26px;
+                                    border-left: 0;
+                                    cursor: pointer;
+                                }
+                            }
+                        }
+                        .actions{
+                            padding: 30px 0 0;
+                            text-align: initial;
+                            .coupen{
+                                position: relative;
+                                display: flex;
+                                align-items: flex-start;
+                                flex-wrap: wrap;
+                                width: 70%;
+                                float: left;
+                                input{
+                                    width: auto;
+                                    margin: 0 20px 0 0;
+                                    padding: 12px 0 11px;
+                                    position: relative;
+                                    display: inline-block;
+                                    vertical-align: top;
+                                    font-family: inherit;
+                                    font-size: 15px;
+                                    line-height: 22px;
+                                    font-weight: inherit;
+                                    color: #6f6f6f;
+                                    background-color: transparent;
+                                    border: none;
+                                    border-bottom: 1px solid #000;
+                                    border-radius: 0;
+                                    outline: 0;
+                                    cursor: pointer;
+                                }
+                                .apply{
+                                    @include button;
+                                    button{
+                                        span{
+                                            font-family: Arimo,sans-serif;
+                                            font-size: 13px;
+                                            line-height: 2em;
+                                            font-weight: 700;
+                                            letter-spacing: .03em;
+                                            text-decoration: none;
+                                            text-transform: uppercase;
+                                            color: black;
+                                        }
+                                    }
+                                }
+                            }
+                            .update{
+                                @include button;
+                                float: right;
+                                button{
+                                    span{
+                                            font-family: Arimo,sans-serif;
+                                            font-size: 13px;
+                                            line-height: 2em;
+                                            font-weight: 700;
+                                            letter-spacing: .03em;
+                                            text-decoration: none;
+                                            text-transform: uppercase;
+                                            color: black;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .cart-collaterals{
+        .cart-totals{
+            margin-top: 80px;
+            h2{
+                font-family: Arimo,sans-serif;
+                font-weight: 700;
+                text-transform: uppercase;
+                color: #000;
+                font-size: 28px;
+                line-height: 1.071em;
+                letter-spacing: .03em;
+                margin: 0 0 22px;
+                word-wrap: break-word;
+            }
+            table{
+                width: 100%;
+                vertical-align: middle;
+                border: medium none;
+                border-collapse: collapse;
+                border-spacing: 0;
+                margin-bottom: 20px;
+                tbody{
+                    tr{
+                        border-left: none;
+                        border-right: none;
+                        border-top: none;
+                        border-bottom: 1px solid #e2e2e2;
+                        th{
+                            width: 20%;
+                            font-family: Arimo,sans-serif;
+                            font-weight: 700;
+                            text-transform: uppercase;
+                            color: #000;
+                            font-size: 15px;
+                            line-height: 1.133em;
+                            letter-spacing: .03em;
+                        }
+                        td{
+                            padding: 15px 0 15px 5px;
+                            vertical-align: middle;
+                            text-align: left;
+                            border: 0;
+                            span{
+                                font-family: Arimo,sans-serif;
+                                font-size: 15px;
+                                line-height: 1.8em;
+                                font-weight: 400;
+                                color: #6f6f6f;
+                            }
+                            .bolder{
+                                font-weight: bolder;
+                            }
+                        }
+                    }
+                }
+            }
+            .update{
+                @include button;
+                a{
+                    color: #000;
+                    span{
+                        font-family: Arimo,sans-serif;
+                        font-size: 15px;
+                        font-weight: 700;
+                        padding: 10px 60px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media only screen and (max-width: 680px){
+    .cart-page form .table-content .table tbody tr .actions .coupen input {
+        width: 100%;
+        margin: 0 0 20px;
+        text-align: center;
+    }    
+    .cart-page form .table-content .table tbody tr .actions .coupen{
+        width: 100%;
+        float: none;
+    }
+    .cart-page form .table-content .table tbody tr .actions .coupen .apply{
+        width: 100%;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    .cart-page form .table-content .table tbody tr .actions .update{
+        width: 100%;
+        float: none;
+        text-align: center;
+    }
+    .cart-page form .table-content .table thead tr th{
+        font-size: 11px;
+    }
+}
+
+@media (max-width: 575px){
+    .cart-page form .table-content .table tbody tr .product-thumbnail{
+        display: none;
+    }
+    .cart-page form .table-content .table thead tr .product-thumbnail{
+        display: none;
+    }
+    .cart-page form .table-content .table tbody tr .quantity-main .quatity .minus{
+        width: 12px;
+    }
+    .cart-page form .table-content .table tbody tr .quantity-main .quatity .plus{
+        width: 12px;
+    }
+    .cart-page form .table-content .table tbody tr .product-name a{
+        font-size: 11px;
+    }
+    .cart-page form .table-content .table tbody tr td span{
+        font-size: 11px;
+    }
+    .cart-page form .table-content .table tbody tr .quantity-main .quatity{
+        width: 85px;
+    }
+    .cart-page form .table-content .table tbody tr .quantity-main .quatity input{
+        width: 30px;
+        height: 30px;
+    }
+    .cart-page .cart-collaterals .cart-totals .update a span {
+        font-size: 13px;
+        padding: 10px 0px;
+    }
+}

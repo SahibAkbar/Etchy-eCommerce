@@ -1,0 +1,296 @@
+.checkout-page{
+    padding: 100px 0px 100px 0px;
+    .cupon-bar{
+        display: flex;
+        align-items: flex-start;
+        padding: 20px 30px;
+        margin-bottom: 30px;
+        border: 1px solid #e2e2e2;
+        flex-direction: column;
+        button{
+            margin-top: 12px;
+            color: #000;
+            font-family: Arimo,sans-serif;
+            font-size: 15px;
+            line-height: 1.8em;
+            font-weight: 400;
+            padding: 0;
+            transition: color .25s ease-out;
+        } 
+    }
+    .coupen-code{
+        p{
+            margin-bottom: 20px;
+            font-family: Arimo,sans-serif;
+            font-size: 15px;
+            font-weight: 400;
+            color: #6f6f6f;
+        }
+        input{
+            margin-bottom: 10px;
+            font-family: Arimo,sans-serif;
+            position: relative;
+            display: inline-block;
+            width: 100%;
+            vertical-align: top;
+            margin: 0 0 12px;
+            padding: 6px 0;
+            font-family: inherit;
+            font-size: 15px;
+            line-height: 22px;
+            font-weight: inherit;
+            color: #6f6f6f;
+            background-color: transparent;
+            border: none;
+            border-bottom: 1px solid #000;
+            border-radius: 0;
+            outline: 0;
+            cursor: pointer;
+        }
+        a{
+            color: black;
+            @include button;
+        }
+    }
+    .checkout-inner{
+        .left{
+            h3{
+                font-family: Arimo,sans-serif;
+                font-weight: 700;
+                text-transform: uppercase;
+                color: #000;
+                font-size: 35px;
+                line-height: 1.057em;
+                letter-spacing: .02em;
+                word-wrap: break-word;
+                margin: 0 0 20px;
+            }
+            .fields{
+                p{
+                    margin: 0;
+                    label{
+                        display: block;
+                        margin-bottom: 0.5em;
+                    }
+                    input{
+                        position: relative;
+                        display: inline-block;
+                        width: 100%;
+                        vertical-align: top;
+                        margin: 0 0 12px;
+                        padding: 6px 0;
+                        font-family: inherit;
+                        font-size: 15px;
+                        line-height: 22px;
+                        font-weight: inherit;
+                        color: #6f6f6f;
+                        background-color: transparent;
+                        border: none;
+                        border-bottom: 1px solid #000;
+                        border-radius: 0;
+                        outline: 0;
+                        cursor: pointer;
+                    }
+                    select{
+                    }
+                    .select2-container{
+                        width: 100% !important;
+                        display: block;
+                        height: 46px;
+                        padding: 12px 23px;
+                        margin: 0;
+                        font-family: inherit;
+                        font-size: 15px;
+                        line-height: 22px;
+                        font-weight: 400;
+                        color: #6f6f6f;
+                        background-color: #fafafa;
+                        border: 1px solid transparent;
+                        border-radius: 0;
+                        outline: 0;
+                        cursor: pointer;
+                            .select2-selection--single{
+                                border: none;
+                                background: transparent;
+                                .select2-selection__rendered{
+                                display: block;
+                                padding: 0;
+                                line-height: inherit;
+                                color: inherit;
+                                overflow: hidden;
+                                text-overflow: ellipsis;
+                                white-space: nowrap;
+                            }
+                            .select2-selection__arrow{
+                                top: 5px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .right{
+            h4{
+                margin: 0 0 20px;
+                font-family: Arimo,sans-serif;
+                font-weight: 700;
+                text-transform: uppercase;
+                color: #000;
+                font-size: 35px;
+                line-height: 1.057em;
+                letter-spacing: .02em;
+                word-wrap: break-word;
+            }
+            p{
+                margin: 0;
+                label{
+                    display: block;
+                    margin-bottom: 0.5em;
+                }
+                textarea{
+                    height: 244px;
+                    padding: 12px 20px;
+                    border: 1px solid #000;
+                    position: relative;
+                    display: inline-block;
+                    width: 100%;
+                    vertical-align: top;
+                    margin: 0 0 12px;
+                    font-family: inherit;
+                    font-size: 15px;
+                    line-height: 22px;
+                    font-weight: inherit;
+                    color: #6f6f6f;
+                    background-color: transparent;
+                    border-radius: 0;
+                    outline: 0;
+                    cursor: pointer;
+                }
+            }
+        }
+        .bottom{
+            margin-top: 60px;
+            h3{
+                margin: 24px 0 20px;
+                font-family: Arimo,sans-serif;
+                font-weight: 700;
+                text-transform: uppercase;
+                color: #000;
+                font-size: 35px;
+                line-height: 1.057em;
+                letter-spacing: .02em;
+                word-wrap: break-word;
+            }
+            .order{
+                table{
+                    width: 100%;
+                    vertical-align: middle;
+                    border: medium none;
+                    border-collapse: collapse;
+                    border-spacing: 0;
+                    thead{
+                        tr{
+                            border-left: none;
+                            border-right: none;
+                            border-top: none;
+                            border-bottom: 1px solid #e2e2e2;
+                            th{
+                                font-family: Arimo,sans-serif;
+                                font-weight: 700;
+                                text-transform: uppercase;
+                                color: #000;
+                                font-size: 15px;
+                                line-height: 1.133em;
+                                letter-spacing: .03em;
+                                padding: 15px 0 15px 5px;
+                                vertical-align: middle;
+                                text-align: left;
+                                border: 0;
+                                &:first-child {
+                                    padding-left: 0;
+                                }
+                            }
+                        }
+                    }
+                    tbody{
+                        tr{
+                            border-left: none;
+                            border-right: none;
+                            border-top: none;
+                            border-bottom: 1px solid #e2e2e2;
+                            td{
+                                padding: 15px 0 15px 5px;
+                                vertical-align: middle;
+                                text-align: left;
+                                border: 0;
+                                &:first-child {
+                                    padding-left: 0;
+                                }
+                                strong{
+                                    font-weight: bolder;
+                                }
+                            }
+                        }
+                    }
+                    tfoot{
+                        tr{
+                            border-left: none;
+                            border-right: none;
+                            border-top: none;
+                            border-bottom: 1px solid #e2e2e2;
+                            th{
+                                font-family: Arimo,sans-serif;
+                                font-weight: 700;
+                                text-transform: uppercase;
+                                color: #000;
+                                font-size: 15px;
+                                line-height: 1.133em;
+                                letter-spacing: .03em;
+                                padding: 15px 0 15px 5px;
+                                vertical-align: middle;
+                                text-align: left;
+                                border: 0;
+                                &:first-child {
+                                    padding-left: 0;
+                                }
+                            }
+                            td{
+                                padding: 15px 0 15px 5px;
+                                vertical-align: middle;
+                                text-align: left;
+                                border: 0;
+                                strong{
+                                    font-weight: bolder;
+                                }
+                            }
+                        }
+                    }
+                }
+                .payment{
+                    margin-top: 30px;
+                    ul{
+                        li{
+                            padding: 15px 25px 15px 25px;
+                            position: relative;
+                            margin: 0;
+                            border: 1px solid #e2e2e2;
+                        }
+                    }
+                    .place-ordr-button{
+                        margin-top: 30px;
+                        p{
+                            margin-bottom: 15px;
+                            a{
+                                color: black;
+                                letter-spacing: 0px;
+                            }
+                        }
+                        button{
+                            @include button;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
